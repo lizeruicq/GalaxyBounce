@@ -2,7 +2,7 @@ import SpriteKit
 
 class BackgroundUtils {
     static func createStarryBackground(in scene: SKScene) {
-        // 增加星星数量
+        // 增加星星数量sdadasa
         for _ in 0..<200 {
             let star = SKShapeNode(circleOfRadius: CGFloat.random(in: 0.5...2.0))
             star.fillColor = SKColor.white

@@ -77,7 +77,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private var lastAsteroidDirectionChangeTime: [TimeInterval] = []
     private let asteroidDirectionChangeInterval: TimeInterval = 3.0 // 方向改变间隔
     // 飞船物理参数
-    private let maxImpulse: CGFloat = 400.0 // 最大冲量
+    private let maxImpulse: CGFloat = 300.0 // 最大冲量
     private let dampingFactor: CGFloat = 0.95 // 阻尼因子
     // 母船移动参数
     private var motherShipVelocity: CGVector = .zero
@@ -842,10 +842,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
 
     // 在飞船碰撞时重置轨迹
-    private func resetTrail() {
-        trailPositions.removeAll()
-        updateTrailDisplay()
-    }
+//    private func resetTrail() {
+//        trailPositions.removeAll()
+//        updateTrailDisplay()
+//    }
 
     // 创建母船爆炸效果
     private func createMotherShipExplosion(at position: CGPoint) {
@@ -1044,7 +1044,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 ))
             }
             // 重置轨迹
-            resetTrail()
+//            resetTrail()
         }
 
         // 检查是否是飞船与陨石的碰撞
